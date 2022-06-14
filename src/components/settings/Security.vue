@@ -90,7 +90,13 @@
         <TwoFADialog ref="TwoFADialog" />
 
         <Confirm ref="confirmDisableAuth" btn-style="btn-danger" :yes-text="$t('I understand, please disable')" :no-text="$t('Leave')" @yes="disableAuth">
-            <template v-if="$i18n.locale === 'es-ES' ">
+            <template v-if="$i18n.locale === 'ca' ">
+                <p>Esteu segur que voleu <strong>desactivar l'autenticació</strong>?</p>
+                <p>És per a <strong>qui implementa autenticació de tercers</strong> davant Uptime Kuma com per exemple Cloudflare Access.</p>
+                <p>Si us plau aneu amb compte.</p>
+            </template>
+
+			<template v-if="$i18n.locale === 'es-ES' ">
                 <p>Seguro que deseas <strong>deshabilitar la autenticación</strong>?</p>
                 <p>Es para <strong>quien implementa autenticación de terceros</strong> ante Uptime Kuma como por ejemplo Cloudflare Access.</p>
                 <p>Por favor usar con cuidado.</p>

@@ -2,6 +2,7 @@ import { createI18n } from "vue-i18n/index";
 import en from "./languages/en";
 
 const languageList = {
+    "ca": "Catalan",
     "cs-CZ": "Čeština",
     "zh-HK": "繁體中文 (香港)",
     "bg-BG": "Български",
